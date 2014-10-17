@@ -17,7 +17,7 @@ class Container extends \Pimple\Container
     {
         $values['dispatcher_class'] = 'Symfony\\Component\\EventDispatcher\\EventDispatcher';
         $values['dispatcher'] = function ($c) {
-            $dispatcher = new $c['dispatcher_class'()]();
+            $dispatcher = new $c['dispatcher_class']();
 
             return $dispatcher;
         };
